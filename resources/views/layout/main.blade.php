@@ -22,16 +22,24 @@
     </div>
 </div>
 
-<main style="border: 1px solid red">
     @yield('fotos-passando')
-</main>
+
+    @yield('primeiro-conteudo')
+
+    @yield('primeira-foto')
+
+    @yield('segundo-conteudo')
 
 <footer>
     <div class="footerdiv">
         <p>© 2023 Doutor Rodrigo Piltcher. Todos os direitos reservados.
-        <br/>CRM-RS: XXXXX</p>
+        <br/>CRM-RS: 46401</p>
     </div>
 </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
 
 <style>
     * {
@@ -42,8 +50,7 @@
 /* CSS DA PRIMEIRA NAV BAR (AZUL ESCURO) */
     body{
         overflow-y: visible;
-        height: 100vh;
-        width: 100vw;
+
     }
 
     .footerdiv p{
@@ -95,12 +102,14 @@
         align-items:  center;
         height: 70px;
         align-items: flex-start;
-        background: #184BFF;
+        background: #001a66;
+        /*background: #002080;*/
     }
 
     footer{
-        background: #184BFF;
-        position: absolute;
+        background: #001a66;
+        /*background: #002080;*/
+        position: fixed;
         bottom:0;
         width:100%;
         height: 50px;
