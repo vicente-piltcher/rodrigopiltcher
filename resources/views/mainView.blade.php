@@ -74,10 +74,10 @@
         <p class="title-1-content espec">Especialidades</p>
         <div class="grid-center">
           <div class="content-second grid">
-            <img for="cirurApaDigest" class="grid-item" src="{{ Vite::asset('resources/images/aparelhodigest.png') }}" alt="aparelho-digestivo">
-            <img for="cirurOncoDigest" class="grid-item" src="{{ Vite::asset('resources/images/oncolog.png') }}" alt="aparelho-digestivo">
-            <img for="herniaAbd" class="grid-item" src="{{ Vite::asset('resources/images/hernia.png') }}" alt="aparelho-digestivo">
-            <img for="robotico" class="grid-item" src="{{ Vite::asset('resources/images/robotica.png') }}" alt="aparelho-digestivo">
+            <img for="cirurApaDigest" class="grid-item" src="{{ Vite::asset('resources/images/icons/aparelhodigest02R.png') }}" alt="aparelho-digestivo">
+            <img for="cirurOncoDigest" class="grid-item" src="{{ Vite::asset('resources/images/icons/oncolog02R.png') }}" alt="aparelho-oncologico-digestivo">
+            <img for="herniaAbd" class="grid-item" src="{{ Vite::asset('resources/images/icons/hernia02R.png') }}" alt="hernia">
+            <img for="robotico" class="grid-item" src="{{ Vite::asset('resources/images/icons/robotica02R.png') }}" alt="CirurgiaRobo">
           </div>
           <div id="textos">
               <div id="cirurApaDigest" class="text-2">
@@ -152,13 +152,17 @@
     }
 
     .grid-item{
-      width: 85%;
+      width: 100%;
       height: 200px;
       box-sizing: border-box;
+
+      border: 1px dotted black;
+      border-radius: 85px;
+
     }
 
     .grid-item:hover{
-        opacity: 70%;
+        background-color: #d9d4f4;
         cursor: pointer;
     }
 
