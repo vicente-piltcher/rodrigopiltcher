@@ -12,11 +12,25 @@
 
 <div style="display: inline; width: 100%">
     <div>   
-        <nav style="padding-left: 200px;">
+        <nav class="nav-content">
             <a href="/#" id="logo"><img style="height: 55px; width: 55px;" src="{{ Vite::asset('resources/images/favicon.png') }}"></a>
             <div class="div1nav">
                 <a class="title" href="/#">Rodrigo Piltcher</a>
                 <p class="subtitle" >Aparelho Digestivo e Cirurgia Robótica</p>
+            </div>
+            <div class="nav-links">
+                <div class="nav-link-element" >
+                    <a href="#first-cont"><p>Sobre mim</p></a>
+                </div>
+                <div class="nav-link-element" >
+                    <a href="#second-cont"><p>Especialidades</p></a>
+                </div>
+                <div class="nav-link-element" >
+                    <a href="#third-cont"><p>Conteúdo</p></a>
+                </div>
+                <div class="nav-link-element" >
+                    <a href="#forth-cont"><p>Contatos</p></a>
+                </div>
             </div>
         </nav>
     </div>
@@ -24,12 +38,27 @@
 
     @yield('fotos-passando')
 
-    @yield('primeiro-conteudo')
+    <div id="first-cont">
+        @yield('primeiro-conteudo')
+    </div>
 
     @yield('primeira-foto')
 
-    @yield('segundo-conteudo')
+    <div id="second-cont">
+        @yield('segundo-conteudo')
+    </div>
 
+    @yield('segunda-foto')
+
+    <div id="third-cont">
+        @yield('terceiro-conteudo')
+    </div>
+
+    @yield('terceira-foto')
+
+    <div id="forth-cont">
+        @yield('quarto-conteudo')
+    </div>
 <footer>
     <div class="footerdiv">
         <p>© 2023 Doutor Rodrigo Piltcher. Todos os direitos reservados.
@@ -39,12 +68,14 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
 
 <style>
     * {
         margin: 0;
         padding: 0;
+
+        scroll-behavior: smooth;
     }
 
 /* CSS DA PRIMEIRA NAV BAR (AZUL ESCURO) */
@@ -53,9 +84,42 @@
 
     }
 
+    .nav-content{
+        padding-left: 200px;
+    }
+
     .footerdiv p{
         font-size: 11px;
         line-height: normal;
+        color: #fff;
+    }
+
+    .nav-link-element{
+        width: 20%;
+        text-align: center;
+
+        margin: 0px 20px 0px 20px;
+    }
+
+    .nav-links{
+        right: 0;
+
+        width: 50%;
+        margin-top: 20px;
+        margin-right: 10px;
+        margin: 25px 10px 0px 30px;
+
+        display: flex;
+
+    }
+
+    .nav-link-element p{
+
+        font-size: 14px;
+        font-style: italic;
+        
+        line-height: normal;
+        letter-spacing: 4px;
         color: #fff;
     }
 
@@ -109,8 +173,8 @@
     footer{
         background: #001a66;
         /*background: #002080;*/
-        position: fixed;
-        bottom:0;
+        position: absolute;
+        bottom:1;
         width:100%;
         height: 50px;
         padding: 10px 5px;

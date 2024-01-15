@@ -11,6 +11,8 @@
         "vite": "^4.0.0"
     },
     "dependencies": {
-        "bootstrap": "^5.3.2"
+        "bootstrap": "^5.3.2",
+        "vue": "^3.4.7",
+        "vuejs": "^3.0.1"
     }
 }
