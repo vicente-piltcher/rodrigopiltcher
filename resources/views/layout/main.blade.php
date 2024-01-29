@@ -32,6 +32,9 @@
                     <a href="#forth-cont"><p>Contatos</p></a>
                 </div>
             </div>
+            <div class="insta">
+                <a target="_blank" href="https://www.instagram.com/rodrigopiltcher/"><img src="{{ Vite::asset('resources/images/icons/instagram.png') }}" alt="local-dr.rodrigo"></a>
+            </div>
         </nav>
     </div>
 </div>
@@ -82,6 +85,11 @@
     body{
         overflow-y: visible;
 
+    }
+
+    .insta{ 
+        margin-left: 80px;
+        margin-top: 20px;
     }
 
     .nav-content{

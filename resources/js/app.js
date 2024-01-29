@@ -29,6 +29,9 @@ $(document).ready(function () {
     $("#txt2-6").hide();
     $("#txt2-3-1").hide();
     $("#txt2-3-2").hide();
+
+    $("#txt4-1").show();
+    $("#txt4-2").hide();
     
 });
  
@@ -86,6 +89,15 @@ $('.btn-onco').click(function () {
 $('.btn-fig').click(function () {
     $("#txt2-3-1").hide();
     $("#txt2-3-2").hide();
+    
+    let idClicado = $(this).attr('for');
+
+    $('#'+idClicado).fadeIn();
+});
+
+$('.btn-rob').click(function () {
+    $("#txt4-1").hide();
+    $("#txt4-2").hide();
     
     let idClicado = $(this).attr('for');
 

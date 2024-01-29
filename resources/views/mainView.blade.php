@@ -7,10 +7,6 @@
 <div id="carouselExampleControls" id="myCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="7000">
   <div class="carousel-inner">
 
-    <div class="carousel-item">
-      <img class="d-block w-100" src="{{ Vite::asset('resources/images/fotospassando/cirRob1.png') }}" alt="First slide">
-    </div>
-
     <div class="carousel-item active">
       <img class="d-block w-100" src="{{ Vite::asset('resources/images/fotospassando/img3edit.jpg') }}" alt="Second slide">
     </div>
@@ -20,15 +16,15 @@
     </div>
 
     <div class="carousel-item">
-      <img class="d-block w-100" src="{{ Vite::asset('resources/images/fotospassando/labar2.jpg') }}" alt="Forth slide">
-    </div>
-
-    <div class="carousel-item">
-      <img class="d-block w-100" src="{{ Vite::asset('resources/images/fotospassando/img8edit.jpg') }}" alt="Fifth slide">
+      <img class="cover" src="{{ Vite::asset('resources/images/fotospassando/digoult.jpg') }}" alt="dr.rodrigo">
     </div>
 
     <div class="carousel-item">
       <img class="d-block w-100" src="{{ Vite::asset('resources/images/fotospassando/labaro.jpg') }}" alt="Sixth slide">
+    </div>
+
+    <div class="carousel-item">
+      <img class="d-block w-100" src="{{ Vite::asset('resources/images/fotospassando/img8edit.jpg') }}" alt="Fifth slide">
     </div>
 
   </div>
@@ -50,7 +46,7 @@
   <div class="shadow">
     <div class="general-content container">
         <div class="content">
-          <img src="{{ Vite::asset('resources/images/fotospassando/flatimg3.jpg') }}" alt="foto-dr.rodrigo" style="border: 2px solid black;">
+          <img class="cover" src="{{ Vite::asset('resources/images/fotospassando/flatimg3.jpg') }}" alt="foto-dr.rodrigo" style="border: 2px solid black;">
           <div class="text">
             <p class="title-1-content">Dr. Rodrigo Piltcher</p>
             <p>Graduado em Medicina pela Universidade Federal de Pelotas (UFPEL), Residência Médica em Cirurgia no Hospital de Clínicas de Porto Alegre (Porto Alegre-RS) e em Cirurgia do Aparelho Digestivo no Hospital Nossa Senhora das Graças (Curitiba-PR). Mestrando na área de Cirurgia Geral na Universidade Federal do Rio Grande do Sul, com pesquisa na área de Hérnias Abdominais. Membro Titular do Colégio Brasileiro de Cirurgia Digestiva. Certificado em Cirurgia Robótica e Cirurgia Oncológica Digestiva.</p>
@@ -63,8 +59,8 @@
 @endsection
 
 @section('primeira-foto')
-  <div class="general-content content-2">
-      <img src="{{ Vite::asset('resources/images/fotospassando/img6.jpg') }}" alt="assinatura-dr.rodrigo">
+  <div class=" content-2">
+    <img class="d-block w-100" src="{{ Vite::asset('resources/images/fotospassando/labar2.jpg') }}" alt="Forth slide">      
   </div>
 @endsection
 
@@ -72,7 +68,7 @@
   <div>
     <div class="general-content container" id="sc">
         <p class="title-1-content espec">Especialidades</p>
-        <div class="grid-center" style="border: 1px solid red">
+        <div class="grid-center">
           <div class="content-second grid">
             <img for="cirurApaDigest" class="grid-item" src="{{ Vite::asset('resources/images/icons/aparelhodigest02R.png') }}" alt="aparelho-digestivo">
             <img for="cirurOncoDigest" class="grid-item" src="{{ Vite::asset('resources/images/icons/oncolog02R.png') }}" alt="aparelho-oncologico-digestivo">
@@ -243,9 +239,16 @@
 
               <div id="robotico" class="text-2">
                 <p class="title-2-content">Videolabaroscopia e Cirurgia Robótica</p>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <p>As cirurgias abdominais eram feitas de forma aberta, ou seja, com incisões abdominais amplas para possibilitar acesso a cavidade abdominal e tratamento das mais diversas patologias. A Cirurgia Minimamente Invasiva é aquela realizada por meio da Videolaparoscopia ou Cirurgia Robótica.</p>
                 </br>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <div id="txt4-1">
+                  <p>A videolaparoscopia, a cirurgia é realizada por meio de incisões pequenas, em média de 5-12mm cada, por onde entra uma câmera e pinças, possibilitando recuperação precoce no pós-operatório e retorno às atividades, além de reduzir alguns riscos como infecção de ferida operatória e hérnias incisionais.</p>
+                </div>
+                <div id="txt4-2">
+                  <p>Na sequência, surgiu a Cirurgia Robótica, que possibilita aumento dos movimentos das pinças cirúrgicas, melhor campo de visão, ergonomia para o cirurgião e ótimos resultados cirúrgicos, no mínimo comparáveis com os resultados das outras modalidades.</p>
+                </div>
+                <button for="txt4-1" class="btn btn-primary btn-rob">Videolabaroscopia</button>
+                <button for="txt4-2" class="btn btn-primary btn-rob">Cirurgia Robótica</button>
               </div>
 
           </div>
@@ -256,35 +259,79 @@
 
 @section('segunda-foto')
     <div class=" content-2">
-      <img src="{{ Vite::asset('resources/images/fotospassando/dna.jpg') }}" alt="dna">
+      <img class="cover" src="{{ Vite::asset('resources/images/fotospassando/img6.jpg') }}" alt="assinatura-dr.rodrigo">
     </div>
 @endsection
 
 @section('terceiro-conteudo')
+  <div id="cnt">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
           <a class="navbar-brand" id="title" href="#">Conteúdo</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-item nav-link active" href="#">Artigos</a>
-              <a class="nav-item nav-link" href="#">Cirurgias</a>
-              <a class="nav-item nav-link" href="#">Vídeos</a>
+              <p id="lcon" for="art" class="nav-item nav-link active">Artigos</p>
+              <p id="lcon" for="cir" class="nav-item nav-link">Cirurgias</p>
+              <p id="lcon" for="vid" class="nav-item nav-link">Vídeos</p>
             </div>
           </div>
         </div>
     </nav>
     <div class="general-content container">
-      <div id="app">
+      <div id="artigos" class="div-content">
+        <div class="cell">
+          <a target="_blank" href="https://www.researchgate.net/publication/370125814_Encapsulating_peritoneal_sclerosis_post_liver_transplant_and_peritoneal_dialysis_case_report_and_literature_review?_sg=ha8Bi94isAQYWSLJrAB0MFtrh2Rc3oqiynUcS9k2NxRYBWaJupYJk9VRTR9ECke2jsYxJTpdklmZko8&_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InF1ZXN0aW9uIiwicGFnZSI6Il9kaXJlY3QifX0"><img clas="cover" src="{{ Vite::asset('resources/images/artigo/artigo1.png') }}" alt="foto-artigo-1"></a>
+          <p>Encapsulating peritoneal sclerosis post liver transplant and peritoneal dialysis</p>
+        </div>
+
+        <div class="cell">
+          <a target="_blank" href="https://www.researchgate.net/publication/373368153_Incisional_Hernias_after_Vascular_Surgery_for_Aortoiliac_Aneurysm_and_Aortoiliac_Occlusive_Arterial_Disease_Has_Prophylactic_Mesh_Changed_This_Scenario"><img clas="cover" src="{{ Vite::asset('resources/images/artigo/artigo2.jpg') }}" alt="foto-artigo-2"></a>
+          <p>Incisional Hernias after Vascular Surgery for Aortoiliac Aneurysm and Aortoiliac Occlusive Arterial Disease</p>
+        </div>
+
+        <div class="cell">
+          <a target="_blank" href="https://www.researchgate.net/publication/361494872_Mesenteric_venous_thrombosis_in_a_pregnant_woman_at_first_trimester_gestation_a_case_report?_sg=WL1_hb9AIQBeq92c51TfdzR0_W-a1t56adnMREzXd3I1zROF-VR05uSkY77nEnCu1JPncYrA8wfcBMs&_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InF1ZXN0aW9uIiwicGFnZSI6Il9kaXJlY3QifX0"><img clas="cover" src="{{ Vite::asset('resources/images/artigo/artigo3.jpg') }}" alt="foto-artigo-3"></a>
+          <p>Mesenteric venous thrombosis in a pregnant woman at first trimester gestation: a case report</p>
+        </div>
+        
+        <div class="cell">
+          <a target="_blank" href="https://www.researchgate.net/publication/359628446_Pneumatosis_cystoides_intestinalis_with_pneumoperitoneum_in_an_87-years-old_male_patient_a_case_report?_sg=VX4kwgLX2FaadoeaT4cNBW8gEm4KvXYGZj4W17SlIuu6onyG9TdRVSOUlJvvhS8kwTPjlp6giHL4Zps&_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InF1ZXN0aW9uIiwicGFnZSI6Il9kaXJlY3QifX0"><img clas="cover" src="{{ Vite::asset('resources/images/artigo/artigo4.jpg') }}" alt="foto-artigo-4"></a>
+          <p>Pneumatosis cystoides intestinalis with pneumoperitoneum in an 87-years-old male patient: a case report</p>
+        </div>
+        
+        <div class="cell">
+          <a target="_blank" href="https://www.researchgate.net/publication/353943689_Complex_abdominal_wall_reconstruction_after_massive_resection_due_to_neoplastic_invasion_a_case_report"><img clas="cover" src="{{ Vite::asset('resources/images/artigo/artigo5.jpg') }}" alt="foto-artigo-5"></a>
+          <p>Complex abdominal wall reconstruction after massive resection due to neoplastic invasion: a case report</p>
+        </div>
+        
+        <div class="cell">
+          <a target="_blank" href="https://www.researchgate.net/publication/363730900_Gastric_adenocarcinoma_in_the_excluded_stomach_18_years_after_bariatric_surgery_a_case_report?_sg=a5_SX676-okqIs43MzcwRe19n7_Oek82_vCDwpWLmRx4b4bNiA4GIiC0R4p-wRvVFkqhT_Q5QFTkeFo&_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InF1ZXN0aW9uIiwicGFnZSI6Il9kaXJlY3QifX0"><img clas="cover" src="{{ Vite::asset('resources/images/artigo/artigo6.jpg') }}" alt="foto-artigo-6"></a>
+          <p>Gastric adenocarcinoma in the excluded stomach 18 years after bariatric surgery: a case report</p>
+        </div>
+        
+        <div class="cell">
+          <a target="_blank" href="https://www.researchgate.net/publication/356986154_Biliary_tract_melanoma_metastasis_mimicking_hilar_cholangiocarcinoma_a_case_report"><img clas="cover" src="{{ Vite::asset('resources/images/artigo/artigo7.jpg') }}" alt="foto-artigo-7"></a>
+          <p>Biliary tract melanoma metastasis mimicking hilar cholangiocarcinoma: a case report</p>
+        </div>
+        
+        <div class="cell">
+          <a target="_blank" href="https://www.researchgate.net/publication/354452869_Wandering_spleen_as_a_cause_of_sinistral_portal_hypertension?_sg=TgP1sqJydGJY1tmXD--HnYiq4dDVQSlivMptPicn623kcT0Lgp6WJGhPaVljBl9YZnzs1WQOAaKYg54&_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InF1ZXN0aW9uIiwicGFnZSI6Il9kaXJlY3QifX0"><img clas="cover" src="{{ Vite::asset('resources/images/artigo/artigo8.png') }}" alt="foto-artigo-8"></a>
+          <p>Wandering spleen as a cause of sinistral portal hypertension</p>
+        </div>
+        
+        <div class="cell">
+          <a target="_blank" href="https://www.researchgate.net/publication/354189583_The_impact_of_COVID-19_and_social_avoidance_in_urgent_and_emergency_surgeries_-_will_a_delay_in_diagnosis_result_in_perioperative_complications"><img clas="cover" src="{{ Vite::asset('resources/images/artigo/artigo9.png') }}" alt="foto-artigo-9"></a>
+          <p>The impact of COVID-19 and social avoidance in urgent and emergency surgeries</p>
+        </div>
+
       </div>
     </div>
+  </div>
 @endsection
 
 @section('terceira-foto')
     <div class=" content-2">
-      <img src="{{ Vite::asset('resources/images/fotospassando/img7.jpg') }}" alt="foto-dr.rodrigo">
+      <img class="cover" src="{{ Vite::asset('resources/images/fotospassando/img7.jpg') }}" alt="foto-dr.rodrigo">
     </div>
 @endsection
 
@@ -317,6 +364,59 @@
 @endsection
 
 @section('style')
+
+    #lcon:hover{
+      cursor: pointer;
+    }
+
+    #navbarNavAltMarkup{
+      margin-top: 15px;
+    }
+
+    .div-content{
+      display: grid;
+      gap: 25px;
+      grid-template-columns: repeat(3, 1fr);
+
+      place-items: center;
+      margin-top: 35px;
+
+    }
+
+    #cnt{
+      height: 1200px;
+      width: 100%;
+    }
+
+    .cell p{
+      text-align: center;
+
+      font-size: 16px;
+      font-style: italic;
+      line-height: normal;
+    }
+
+    .cell img{
+      width: 100%;
+      height: 230px;
+
+      text-align: center;
+    }
+
+
+    .cell{
+      padding: 0px;
+
+      width: 70%;
+      height: 300px;
+
+      overflow: hidden;
+
+    }
+
+    .cover{
+      object-fit: cover;
+    }
 
     
     #textos{
