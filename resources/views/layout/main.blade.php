@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title')</title>
-    <link rel="icon" type="image/png" href="{{ Vite::asset('resources/images/favicon.png') }}">
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <link rel="stylesheet" href="{{ asset('build/assets/app-4ed993c7.js') }}">
+    <link rel="icon" type="image/png" href="{{ asset('build/assets/favicon-59275369.png') }}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
@@ -13,7 +13,7 @@
 <div style="display: inline; width: 100%">
     <div>   
         <nav class="nav-content">
-            <a href="/#" id="logo"><img style="height: 55px; width: 55px;" src="{{ Vite::asset('resources/images/favicon.png') }}"></a>
+            <a href="/#" id="logo"><img style="height: 55px; width: 55px;" src="{{ asset('build/assets/favicon-59275369.png') }}"></a>
             <div class="div1nav">
                 <a class="title" href="/#">Rodrigo Piltcher</a>
                 <p class="subtitle" >Aparelho Digestivo e Cirurgia Robótica</p>
@@ -33,7 +33,7 @@
                 </div>
             </div>
             <div class="insta">
-                <a target="_blank" href="https://www.instagram.com/rodrigopiltcher/"><img src="{{ Vite::asset('resources/images/icons/instagram.png') }}" alt="local-dr.rodrigo"></a>
+                <a target="_blank" href="https://www.instagram.com/rodrigopiltcher/"><img src="{{ asset('build/assets/instagram-9d77fc08.png') }}" alt="local-dr.rodrigo"></a>
             </div>
         </nav>
     </div>
@@ -50,6 +50,7 @@
     <div id="second-cont">
         @yield('segundo-conteudo')
     </div>
+
 
     @yield('segunda-foto')
 
@@ -73,6 +74,11 @@
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
 
+<script src="{{asset('build/assets/app-4ed993c7.js')}}"></script>
+<script src="{{asset('build/assets/app-80c1c863.js')}}"></script>
+
+
+
 <style>
     * {
         margin: 0;
@@ -81,6 +87,19 @@
         scroll-behavior: smooth;
     }
 
+    @media(max-width: 830px){
+        body{
+            display:none;
+        }
+    }
+
+
+        @media(max-width: 1024px){
+            #ft-aba img{
+                visibility: hidden;
+            }
+        }
+
 /* CSS DA PRIMEIRA NAV BAR (AZUL ESCURO) */
     body{
         overflow-y: visible;
@@ -88,12 +107,12 @@
     }
 
     .insta{ 
-        margin-left: 80px;
+        margin-left: 60px;
         margin-top: 20px;
     }
 
     .nav-content{
-        padding-left: 200px;
+        padding-left: 100px;
     }
 
     .footerdiv p{
@@ -136,7 +155,7 @@
     }
 
     #logo{
-        padding-top:5px;
+        padding-top:8px;
     }
 
     .title{
@@ -172,7 +191,7 @@
         display: flex;
         padding-left: 20px;
         align-items:  center;
-        height: 70px;
+        height: 80px;
         align-items: flex-start;
         background: #001a66;
         /*background: #002080;*/

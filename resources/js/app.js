@@ -1,4 +1,4 @@
-import './bootstrap';
+
 
 $(document).ready(function () {
     $("#cirurOncoDigest").hide();

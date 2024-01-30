@@ -8,23 +8,23 @@
   <div class="carousel-inner">
 
     <div class="carousel-item active">
-      <img class="d-block w-100" src="{{ Vite::asset('resources/images/fotospassando/img3edit.jpg') }}" alt="Second slide">
+      <img class="d-block w-100" src="{{ asset('build/assets/img3edit-0dfcd770.jpg') }}" alt="Second slide">
     </div>
 
     <div class="carousel-item">
-      <img class="d-block w-100" src="{{ Vite::asset('resources/images/fotospassando/geralRob.jpg') }}" alt="Third slide">
+      <img class="d-block w-100" src="{{ asset('build/assets/cirurD-2e6a6000.png') }}" alt="Third slide">
     </div>
 
     <div class="carousel-item">
-      <img class="cover" src="{{ Vite::asset('resources/images/fotospassando/digoult.jpg') }}" alt="dr.rodrigo">
+      <img class="cover" src="{{ asset('build/assets/digoult-e79e27c6.jpg') }}" alt="dr.rodrigo">
     </div>
 
     <div class="carousel-item">
-      <img class="d-block w-100" src="{{ Vite::asset('resources/images/fotospassando/labaro.jpg') }}" alt="Sixth slide">
+      <img class="d-block w-100" src="{{ asset('build/assets/labaro-57d50479.jpg') }}" alt="Sixth slide">
     </div>
 
     <div class="carousel-item">
-      <img class="d-block w-100" src="{{ Vite::asset('resources/images/fotospassando/img8edit.jpg') }}" alt="Fifth slide">
+      <img class="d-block w-100" src="{{ asset('build/assets/img8edit-d6713100.jpg') }}" alt="Fifth slide">
     </div>
 
   </div>
@@ -46,7 +46,7 @@
   <div class="shadow">
     <div class="general-content container">
         <div class="content">
-          <img class="cover" src="{{ Vite::asset('resources/images/fotospassando/flatimg3.jpg') }}" alt="foto-dr.rodrigo" style="border: 2px solid black;">
+          <img class="cover" src="{{ asset('build/assets/flatimg3-298923af.jpg') }}" alt="foto-dr.rodrigo" style="border: 2px solid black;">
           <div class="text">
             <p class="title-1-content">Dr. Rodrigo Piltcher</p>
             <p>Graduado em Medicina pela Universidade Federal de Pelotas (UFPEL), Residência Médica em Cirurgia no Hospital de Clínicas de Porto Alegre (Porto Alegre-RS) e em Cirurgia do Aparelho Digestivo no Hospital Nossa Senhora das Graças (Curitiba-PR). Mestrando na área de Cirurgia Geral na Universidade Federal do Rio Grande do Sul, com pesquisa na área de Hérnias Abdominais. Membro Titular do Colégio Brasileiro de Cirurgia Digestiva. Certificado em Cirurgia Robótica e Cirurgia Oncológica Digestiva.</p>
@@ -60,7 +60,7 @@
 
 @section('primeira-foto')
   <div class=" content-2">
-    <img class="d-block w-100" src="{{ Vite::asset('resources/images/fotospassando/labar2.jpg') }}" alt="Forth slide">      
+    <img class="d-block w-100" src="{{ asset('build/assets/labar2-b120b827.png') }}" alt="Forth slide">      
   </div>
 @endsection
 
@@ -70,10 +70,10 @@
         <p class="title-1-content espec">Especialidades</p>
         <div class="grid-center">
           <div class="content-second grid">
-            <img for="cirurApaDigest" class="grid-item" src="{{ Vite::asset('resources/images/icons/aparelhodigest02R.png') }}" alt="aparelho-digestivo">
-            <img for="cirurOncoDigest" class="grid-item" src="{{ Vite::asset('resources/images/icons/oncolog02R.png') }}" alt="aparelho-oncologico-digestivo">
-            <img for="herniaAbd" class="grid-item" src="{{ Vite::asset('resources/images/icons/hernia02R.png') }}" alt="hernia">
-            <img for="robotico" class="grid-item" src="{{ Vite::asset('resources/images/icons/robotica02R.png') }}" alt="CirurgiaRobo">
+            <img for="cirurApaDigest" class="grid-item" src="{{ asset('build/assets/aparelhodigest02R-6a191d95.png') }}" alt="aparelho-digestivo">
+            <img for="cirurOncoDigest" class="grid-item" src="{{ asset('build/assets/oncolog02R-f6fb024c.png') }}" alt="aparelho-oncologico-digestivo">
+            <img for="herniaAbd" class="grid-item" src="{{ asset('build/assets/hernia02R-8dc0598e.png') }}" alt="hernia">
+            <img for="robotico" class="grid-item" src="{{ asset('build/assets/robotica02R-71c228e1.png') }}" alt="CirurgiaRobo">
           </div>
           <div id="textos">
 
@@ -258,8 +258,8 @@
 @endsection
 
 @section('segunda-foto')
-    <div class=" content-2">
-      <img class="cover" src="{{ Vite::asset('resources/images/fotospassando/img6.jpg') }}" alt="assinatura-dr.rodrigo">
+    <div class=" content-2" id="ft-aba">
+      <img class="cover" src="{{ asset('build/assets/img6-afd4082b.jpg') }}" alt="assinatura-dr.rodrigo">
     </div>
 @endsection
 
@@ -275,52 +275,55 @@
               <p id="lcon" for="vid" class="nav-item nav-link">Vídeos</p>
             </div>
           </div>
+          <div>
+            <a target="_blank" href="https://www.researchgate.net/profile/Rodrigo-Piltcher-Da-Silva"><button class="btn btn-primary">Mais Artigos</button></a>
+          </div>
         </div>
     </nav>
     <div class="general-content container">
       <div id="artigos" class="div-content">
         <div class="cell">
-          <a target="_blank" href="https://www.researchgate.net/publication/370125814_Encapsulating_peritoneal_sclerosis_post_liver_transplant_and_peritoneal_dialysis_case_report_and_literature_review?_sg=ha8Bi94isAQYWSLJrAB0MFtrh2Rc3oqiynUcS9k2NxRYBWaJupYJk9VRTR9ECke2jsYxJTpdklmZko8&_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InF1ZXN0aW9uIiwicGFnZSI6Il9kaXJlY3QifX0"><img clas="cover" src="{{ Vite::asset('resources/images/artigo/artigo1.png') }}" alt="foto-artigo-1"></a>
+          <a target="_blank" href="https://www.researchgate.net/publication/370125814_Encapsulating_peritoneal_sclerosis_post_liver_transplant_and_peritoneal_dialysis_case_report_and_literature_review?_sg=ha8Bi94isAQYWSLJrAB0MFtrh2Rc3oqiynUcS9k2NxRYBWaJupYJk9VRTR9ECke2jsYxJTpdklmZko8&_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InF1ZXN0aW9uIiwicGFnZSI6Il9kaXJlY3QifX0"><img clas="cover" src="{{ asset('build/assets/artigo1-3f40401b.png') }}" alt="foto-artigo-1"></a>
           <p>Encapsulating peritoneal sclerosis post liver transplant and peritoneal dialysis</p>
         </div>
 
         <div class="cell">
-          <a target="_blank" href="https://www.researchgate.net/publication/373368153_Incisional_Hernias_after_Vascular_Surgery_for_Aortoiliac_Aneurysm_and_Aortoiliac_Occlusive_Arterial_Disease_Has_Prophylactic_Mesh_Changed_This_Scenario"><img clas="cover" src="{{ Vite::asset('resources/images/artigo/artigo2.jpg') }}" alt="foto-artigo-2"></a>
+          <a target="_blank" href="https://www.researchgate.net/publication/373368153_Incisional_Hernias_after_Vascular_Surgery_for_Aortoiliac_Aneurysm_and_Aortoiliac_Occlusive_Arterial_Disease_Has_Prophylactic_Mesh_Changed_This_Scenario"><img clas="cover" src="{{ asset('build/assets/artigo2-c4ca59c6.jpg') }}" alt="foto-artigo-2"></a>
           <p>Incisional Hernias after Vascular Surgery for Aortoiliac Aneurysm and Aortoiliac Occlusive Arterial Disease</p>
         </div>
 
         <div class="cell">
-          <a target="_blank" href="https://www.researchgate.net/publication/361494872_Mesenteric_venous_thrombosis_in_a_pregnant_woman_at_first_trimester_gestation_a_case_report?_sg=WL1_hb9AIQBeq92c51TfdzR0_W-a1t56adnMREzXd3I1zROF-VR05uSkY77nEnCu1JPncYrA8wfcBMs&_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InF1ZXN0aW9uIiwicGFnZSI6Il9kaXJlY3QifX0"><img clas="cover" src="{{ Vite::asset('resources/images/artigo/artigo3.jpg') }}" alt="foto-artigo-3"></a>
+          <a target="_blank" href="https://www.researchgate.net/publication/361494872_Mesenteric_venous_thrombosis_in_a_pregnant_woman_at_first_trimester_gestation_a_case_report?_sg=WL1_hb9AIQBeq92c51TfdzR0_W-a1t56adnMREzXd3I1zROF-VR05uSkY77nEnCu1JPncYrA8wfcBMs&_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InF1ZXN0aW9uIiwicGFnZSI6Il9kaXJlY3QifX0"><img clas="cover" src="{{ asset('build/assets/artigo3-07f89f0e.jpg') }}" alt="foto-artigo-3"></a>
           <p>Mesenteric venous thrombosis in a pregnant woman at first trimester gestation: a case report</p>
         </div>
         
         <div class="cell">
-          <a target="_blank" href="https://www.researchgate.net/publication/359628446_Pneumatosis_cystoides_intestinalis_with_pneumoperitoneum_in_an_87-years-old_male_patient_a_case_report?_sg=VX4kwgLX2FaadoeaT4cNBW8gEm4KvXYGZj4W17SlIuu6onyG9TdRVSOUlJvvhS8kwTPjlp6giHL4Zps&_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InF1ZXN0aW9uIiwicGFnZSI6Il9kaXJlY3QifX0"><img clas="cover" src="{{ Vite::asset('resources/images/artigo/artigo4.jpg') }}" alt="foto-artigo-4"></a>
+          <a target="_blank" href="https://www.researchgate.net/publication/359628446_Pneumatosis_cystoides_intestinalis_with_pneumoperitoneum_in_an_87-years-old_male_patient_a_case_report?_sg=VX4kwgLX2FaadoeaT4cNBW8gEm4KvXYGZj4W17SlIuu6onyG9TdRVSOUlJvvhS8kwTPjlp6giHL4Zps&_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InF1ZXN0aW9uIiwicGFnZSI6Il9kaXJlY3QifX0"><img clas="cover" src="{{ asset('build/assets/artigo4-ba2954b5.jpg') }}" alt="foto-artigo-4"></a>
           <p>Pneumatosis cystoides intestinalis with pneumoperitoneum in an 87-years-old male patient: a case report</p>
         </div>
         
         <div class="cell">
-          <a target="_blank" href="https://www.researchgate.net/publication/353943689_Complex_abdominal_wall_reconstruction_after_massive_resection_due_to_neoplastic_invasion_a_case_report"><img clas="cover" src="{{ Vite::asset('resources/images/artigo/artigo5.jpg') }}" alt="foto-artigo-5"></a>
+          <a target="_blank" href="https://www.researchgate.net/publication/353943689_Complex_abdominal_wall_reconstruction_after_massive_resection_due_to_neoplastic_invasion_a_case_report"><img clas="cover" src="{{ asset('build/assets/artigo5-beb4ec80.jpg') }}" alt="foto-artigo-5"></a>
           <p>Complex abdominal wall reconstruction after massive resection due to neoplastic invasion: a case report</p>
         </div>
         
         <div class="cell">
-          <a target="_blank" href="https://www.researchgate.net/publication/363730900_Gastric_adenocarcinoma_in_the_excluded_stomach_18_years_after_bariatric_surgery_a_case_report?_sg=a5_SX676-okqIs43MzcwRe19n7_Oek82_vCDwpWLmRx4b4bNiA4GIiC0R4p-wRvVFkqhT_Q5QFTkeFo&_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InF1ZXN0aW9uIiwicGFnZSI6Il9kaXJlY3QifX0"><img clas="cover" src="{{ Vite::asset('resources/images/artigo/artigo6.jpg') }}" alt="foto-artigo-6"></a>
+          <a target="_blank" href="https://www.researchgate.net/publication/363730900_Gastric_adenocarcinoma_in_the_excluded_stomach_18_years_after_bariatric_surgery_a_case_report?_sg=a5_SX676-okqIs43MzcwRe19n7_Oek82_vCDwpWLmRx4b4bNiA4GIiC0R4p-wRvVFkqhT_Q5QFTkeFo&_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InF1ZXN0aW9uIiwicGFnZSI6Il9kaXJlY3QifX0"><img clas="cover" src="{{ asset('build/assets/artigo6-8a439a72.jpg') }}" alt="foto-artigo-6"></a>
           <p>Gastric adenocarcinoma in the excluded stomach 18 years after bariatric surgery: a case report</p>
         </div>
         
         <div class="cell">
-          <a target="_blank" href="https://www.researchgate.net/publication/356986154_Biliary_tract_melanoma_metastasis_mimicking_hilar_cholangiocarcinoma_a_case_report"><img clas="cover" src="{{ Vite::asset('resources/images/artigo/artigo7.jpg') }}" alt="foto-artigo-7"></a>
+          <a target="_blank" href="https://www.researchgate.net/publication/356986154_Biliary_tract_melanoma_metastasis_mimicking_hilar_cholangiocarcinoma_a_case_report"><img clas="cover" src="{{ asset('build/assets/artigo7-3b59fb17.jpg') }}" alt="foto-artigo-7"></a>
           <p>Biliary tract melanoma metastasis mimicking hilar cholangiocarcinoma: a case report</p>
         </div>
         
         <div class="cell">
-          <a target="_blank" href="https://www.researchgate.net/publication/354452869_Wandering_spleen_as_a_cause_of_sinistral_portal_hypertension?_sg=TgP1sqJydGJY1tmXD--HnYiq4dDVQSlivMptPicn623kcT0Lgp6WJGhPaVljBl9YZnzs1WQOAaKYg54&_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InF1ZXN0aW9uIiwicGFnZSI6Il9kaXJlY3QifX0"><img clas="cover" src="{{ Vite::asset('resources/images/artigo/artigo8.png') }}" alt="foto-artigo-8"></a>
+          <a target="_blank" href="https://www.researchgate.net/publication/354452869_Wandering_spleen_as_a_cause_of_sinistral_portal_hypertension?_sg=TgP1sqJydGJY1tmXD--HnYiq4dDVQSlivMptPicn623kcT0Lgp6WJGhPaVljBl9YZnzs1WQOAaKYg54&_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InF1ZXN0aW9uIiwicGFnZSI6Il9kaXJlY3QifX0"><img clas="cover" src="{{ asset('build/assets/artigo8-e24c9abe.png') }}" alt="foto-artigo-8"></a>
           <p>Wandering spleen as a cause of sinistral portal hypertension</p>
         </div>
         
         <div class="cell">
-          <a target="_blank" href="https://www.researchgate.net/publication/354189583_The_impact_of_COVID-19_and_social_avoidance_in_urgent_and_emergency_surgeries_-_will_a_delay_in_diagnosis_result_in_perioperative_complications"><img clas="cover" src="{{ Vite::asset('resources/images/artigo/artigo9.png') }}" alt="foto-artigo-9"></a>
+          <a target="_blank" href="https://www.researchgate.net/publication/354189583_The_impact_of_COVID-19_and_social_avoidance_in_urgent_and_emergency_surgeries_-_will_a_delay_in_diagnosis_result_in_perioperative_complications"><img clas="cover" src="{{ asset('build/assets/artigo9-27e5ca83.png') }}" alt="foto-artigo-9"></a>
           <p>The impact of COVID-19 and social avoidance in urgent and emergency surgeries</p>
         </div>
 
@@ -331,7 +334,7 @@
 
 @section('terceira-foto')
     <div class=" content-2">
-      <img class="cover" src="{{ Vite::asset('resources/images/fotospassando/img7.jpg') }}" alt="foto-dr.rodrigo">
+      <img class="cover" src="{{ asset('build/assets/img7-c40ef9b9.jpg') }}" alt="foto-dr.rodrigo">
     </div>
 @endsection
 
@@ -340,19 +343,19 @@
         <div class="content" style="border: 5px groove">
             <div class="content-inside">
               <div class="item-contact">
-                  <img src="{{ Vite::asset('resources/images/icons/telefone.png') }}" alt="telefone-dr.rodrigo">
+                  <img src="{{ asset('build/assets/telefone-bbe13aae.png') }}" alt="telefone-dr.rodrigo">
                   <p>(53) 3227 9065</p>
               </div>
               <div class="item-contact">
-              <a href="https://api.whatsapp.com/send?phone=5553999689900" target="_blank"><img src="{{ Vite::asset('resources/images/icons/whats.png') }}" alt="whatsapp-dr.rodrigo"></a>
+              <a href="https://api.whatsapp.com/send?phone=5553999689900" target="_blank"><img src="{{ asset('build/assets/whats-c511663c.png') }}" alt="whatsapp-dr.rodrigo"></a>
                   <p>(53) 9 9968 9900</p>
               </div>
               <div class="item-contact">
-                  <a href="https://www.instagram.com/rodrigopiltcher/" target="_blank"><img src="{{ Vite::asset('resources/images/icons/insta.png') }}" alt="instagram-dr.rodrigo"></a>
+                  <a href="https://www.instagram.com/rodrigopiltcher/" target="_blank"><img src="{{ asset('build/assets/insta-ae16c753.png') }}" alt="instagram-dr.rodrigo"></a>
                   <p>@rodrigopiltcher</p>
               </div>
               <div class="item-contact">
-                  <a href="https://www.google.com.br/maps/place/R.+Andrade+Neves,+3006+-+Centro,+Pelotas+-+RS,+96020-080/@-31.7579854,-52.3400494,17z/data=!3m1!4b1!4m6!3m5!1s0x9511b5a1ab101e81:0x8e226fd26d0fa376!8m2!3d-31.75799!4d-52.3374745!16s%2Fg%2F11c1pbjqzt?entry=ttu" target="_blank"><img src="{{ Vite::asset('resources/images/icons/local.png') }}" alt="local-dr.rodrigo"></a>
+                  <a href="https://www.google.com.br/maps/place/R.+Andrade+Neves,+3006+-+Centro,+Pelotas+-+RS,+96020-080/@-31.7579854,-52.3400494,17z/data=!3m1!4b1!4m6!3m5!1s0x9511b5a1ab101e81:0x8e226fd26d0fa376!8m2!3d-31.75799!4d-52.3374745!16s%2Fg%2F11c1pbjqzt?entry=ttu" target="_blank"><img src="{{ asset('build/assets/local-7f60c8d0.png') }}" alt="local-dr.rodrigo"></a>
                   <p>Rua Andrade Neves, 3006</p>
               </div>
             </div>
